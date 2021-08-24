@@ -31,8 +31,6 @@ var deployCmd = &cobra.Command{
 			os.Exit(0)
 		}
 
-		fmt.Print(application)
-
 		var bearer = "Bearer " + token
 
 		id := getCommitID(string(bearer), string(application))
